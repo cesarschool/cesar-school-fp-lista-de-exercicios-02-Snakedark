@@ -14,9 +14,16 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 3")
+
+    # Programa que calcula o desconto previdenciário de uma pessoa e retorna o valor do desconto.
+
+    salario = float(input('Digie seu salário: '))
+    desconto = salario * 0.11
+    if (desconto <= 318.20):
+        print('O valor do desconto é: {0:.2f}'.format(desconto))
+    else:
+        print('O valor do desconto é 318.20')
 
 
-    
 if __name__ == '__main__':
     main()

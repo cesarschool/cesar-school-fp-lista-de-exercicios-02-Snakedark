@@ -14,9 +14,18 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 4")
+
+    # Programa que avalia a concessão de empréstimo para a compra de uma casa.
+
+    valor_casa = float(input('Digite o valor da casa a comprar: '))
+    salario = float(input('Digite seu salário: '))
+    anos_a_pagar = float(input('Digite a quantidade de anos a pagar: '))
+    prestacao = valor_casa / (anos_a_pagar * 12)
+    if (prestacao > (salario * 0.30)):
+        print('Empréstimo reprovado.')
+    else:
+        print('Empréstimo aprovado.')
 
 
-    
 if __name__ == '__main__':
     main()

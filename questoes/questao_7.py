@@ -19,9 +19,21 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 7")
+
+    # Programa que lê um ano qualquer e diz se ele é bissexto ou não.
+
+    Ano = int(input('Digite um ano qualquer: '))
+    if ((Ano % 4) == 0):
+        print('O ano é bissexto.')
+    else:
+        if ((Ano % 100) == 0):
+            print('O ano não é bissexto.')
+        else:
+            if ((Ano % 400) == 0):
+                print('O ano é bissexto.')
+            else:
+                print('O ano não é bissexto.')
 
 
-    
 if __name__ == '__main__':
     main()

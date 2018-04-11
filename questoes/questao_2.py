@@ -13,8 +13,16 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    print("questao 2")
 
+    # Programa que calcula o IMC de uma pessoa e diz se ela está ou não acima do peso.
+
+    Altura = float(input('Digite sua altura, em metros: '))
+    Peso = float(input('Digite seu peso, em Kg: '))
+    IMC = Peso / (pow(Altura, 2))
+    if (IMC > 25):
+        print('Você está acima do peso!')
+    else:
+        print('Parabéns! Você leva uma vida saudável!')
 
 
 if __name__ == '__main__':
